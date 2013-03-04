@@ -6,7 +6,7 @@ public class showResultsHandler extends PlayHandler {
 	public boolean canHandle(Request request) {
 	String requestType = "results";
 		
-		if(requestType.equals(Request.getRequestType())){
+		if(requestType.equals(request.getRequestType())){
 			
 		//display results 
 			

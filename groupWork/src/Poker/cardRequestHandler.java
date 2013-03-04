@@ -6,9 +6,9 @@ public class cardRequestHandler extends PlayHandler {
 	public boolean canHandle(Request request) {
 	String requestType = "cardRequest";
 		
-		if(requestType.equals(Request.getRequestType())){
+		if(requestType.equals(request.getRequestType())){
 			
-			//return the request number of cards 
+			System.out.println("You have requested " + request.getRequestedCards() + " cards");
 			
 			return true;
 			

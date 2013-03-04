@@ -8,7 +8,7 @@ public class startGameHandler extends PlayHandler {
 
 		String requestType = "startGame";
 		
-		if(requestType.equals(Request.getRequestType())){
+		if(requestType.equals(request.getRequestType())){
 			
 			//Load cards 
 			//Shuffle cards 

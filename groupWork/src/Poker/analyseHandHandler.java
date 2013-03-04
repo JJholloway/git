@@ -6,7 +6,7 @@ public class analyseHandHandler extends PlayHandler {
 	public boolean canHandle(Request request) {
 	String requestType = "analyseHand";
 		
-		if(requestType.equals(Request.getRequestType())){
+		if(requestType.equals(request.getRequestType())){
 			
 			// compare both players hands 
 			

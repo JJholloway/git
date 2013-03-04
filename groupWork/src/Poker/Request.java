@@ -8,7 +8,7 @@ public class Request {
 	
 	private String requestType; 
 	
-	private int numOfcards;
+	private int numOfCards;
 	
 	
 	// have the constructor take in the above variables
@@ -16,18 +16,20 @@ public class Request {
 	
 	public Request (String requestType, int requestedCards){
 		this.requestType = requestType;
-		this.numOfcards = requestedCards;
+		this.numOfCards = requestedCards;
 		
 			
 		
 	}
 
 
-	public static Object getRequestType() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getRequestType() {
+		return requestType;
 	}
 	
 	// specify all of the getters and setters below
+	public int getRequestedCards() {
+		return numOfCards;
+	}
 	
 }
