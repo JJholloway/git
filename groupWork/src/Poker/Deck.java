@@ -3,15 +3,16 @@ package Poker;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
+import java.util.List;
 
 // this class will only be instantiated once
 //it main features will be 
 // 
 
-public class Deal {
+public class Deck {
 	//create a private reference to the one and only instance of the deal class 
 	
-	private static Deal uniqueDeal = null;
+	private static Deck uniqueDeal = null;
 	
 	//lets create a string array that will hold all of the card names
 	// time providing there will be a better way to do this!!!
@@ -29,14 +30,14 @@ public class Deal {
 	// at this stage of the design it can either be private or protected 
 	// i will set it to private but if it has to determine a subclass instance then it should be changed to protected 
 	
-	private Deal (){}
+	private Deck (){}
 	
 	
 	// Next - return one instance of the singleton if it does not yet exist 
 	
-	public static Deal instance(){
+	public static Deck instance(){
 		if (uniqueDeal == null){
-				uniqueDeal = new Deal();
+				uniqueDeal = new Deck();
 				// have to shuffle the list before it it is dealt 
 				Collections.shuffle(uniqueDeal.packOfCards);
 		}
@@ -47,7 +48,7 @@ public class Deal {
 	
 	// Create a method to return x number of tiles using a LinkedList 
 	
-	public LinkedList<String> getCards(int numOfCards){
+/*public LinkedList<String> getCards(int numOfCards){
 		
 		// create a LinkedList to load into cards to send 
 		LinkedList<String> cardsToSend = new LinkedList<String>();
@@ -63,7 +64,20 @@ public class Deal {
 		return cardsToSend;
 	}
 	
+	*/
 	
-	
+	public static List<iCard> getRequestedCards(int numOfCards){
+		List<iCard> deck1 = CardFactory.getDeck();
+		
+		
+		for(int i =0; i < numOfCards; i++){
+			deck1.get(i).toString();
+			
+			// We have to add a remove function 
+		}
+		
+		return deck1;
+		
+	}	
 
 }
