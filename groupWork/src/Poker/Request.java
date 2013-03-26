@@ -18,8 +18,6 @@ public class Request {
 		this.requestType = requestType;
 		this.numOfCards = requestedCards;
 		
-			
-		
 	}
 
 
