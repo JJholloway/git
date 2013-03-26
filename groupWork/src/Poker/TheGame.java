@@ -9,5 +9,8 @@ public class TheGame
 		List<iCard> deck = CardFactory.getDeck();
 		for(int i=0; i<deck.size(); i++)
 			System.out.println(deck.get(i).toString());
+		
+	
+		
 	}
 }

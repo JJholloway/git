@@ -1,5 +1,6 @@
 package Poker;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -67,16 +68,15 @@ public class Deck {
 	*/
 	
 	public static List<iCard> getRequestedCards(int numOfCards){
-		List<iCard> deck1 = CardFactory.getDeck();
-		
+		List<iCard> cardsToSend = new ArrayList<iCard>();
 		
 		for(int i =0; i < numOfCards; i++){
-			deck1.get(i).toString();
+			cardsToSend.add(CardFactory.getDeck().remove(0));
 			
 			// We have to add a remove function 
 		}
 		
-		return deck1;
+		return cardsToSend;
 		
 	}	
 
