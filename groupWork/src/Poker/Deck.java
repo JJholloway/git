@@ -25,7 +25,7 @@ public class Deck {
 		if (uniqueDeal == null){
 				uniqueDeal = new Deck();
                 uniqueDeal.packOfCards = CardFactory.getDeck();
-               uniqueDeal.cardValue = CardFactory.cardValue();
+             //  uniqueDeal.cardValue = CardFactory.cardValue();
 				// have to shuffle the list before it it is dealt 
 				Collections.shuffle(uniqueDeal.packOfCards);
 		}
@@ -39,7 +39,7 @@ public class Deck {
 		
 		for(int i =0; i < numOfCards; i++){
 			cardsToSend.add(uniqueDeal.packOfCards.get(0));
-			uniqueDeal.cardValue.get(0);
+			//uniqueDeal.cardValue.get(0);
             uniqueDeal.packOfCards.remove(0);
             
             
