@@ -30,6 +30,7 @@ public class Request {
 	// specify all of the getters and setters below
 	public int getRequestedCards() {
 		return numOfCards;
+		
 	}
 	
 }

@@ -9,7 +9,7 @@ public class AnalyseHandHandler extends PlayHandler {
 		if(requestType.equals(request.getRequestType())){
 			
 			// compare both players hands 
-			
+			System.out.println("lets compare these hands");
 			return true;
 			
 		}else{
