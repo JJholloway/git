@@ -14,13 +14,13 @@ public class PlayService {
 
 	private PlayHandler createHandlerChain() {
 		
-		PlayHandler theHandler = new startGameHandler();
+		PlayHandler theHandler = new StartGameHandler();
 		
-		theHandler.addHandler(new cardRequestHandler());
+		theHandler.addHandler(new CardRequestHandler());
 		
-		theHandler.addHandler(new analyseHandHandler());
+		theHandler.addHandler(new AnalyseHandHandler());
 		
-		theHandler.addHandler(new showResultsHandler());
+		theHandler.addHandler(new ShowResultsHandler());
 		
 		return theHandler;
 		

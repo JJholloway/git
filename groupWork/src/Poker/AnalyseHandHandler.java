@@ -1,6 +1,6 @@
 package Poker;
 
-public class analyseHandHandler extends PlayHandler {
+public class AnalyseHandHandler extends PlayHandler {
 
 	@Override
 	public boolean canHandle(Request request) {

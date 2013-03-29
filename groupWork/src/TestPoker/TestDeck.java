@@ -17,7 +17,7 @@ public class TestDeck {
 		
 	//Deck.getRequestedCards(5);
 		
-	assertEquals(5, Deck.getRequestedCards(5));
+	assertEquals(5, Deck.getInstance().getRequestedCards(5));
 		}
 
 }

@@ -5,7 +5,7 @@ package TestPoker;
 
 import Poker.PlayHandler;
 import Poker.Request;
-import Poker.cardRequestHandler;
+import Poker.CardRequestHandler;
 
 
 
@@ -13,7 +13,7 @@ public class TestCardHandler {
 
 	//@Test
 	public void test() {
-		PlayHandler classUnderTest = new cardRequestHandler();
+		PlayHandler classUnderTest = new CardRequestHandler();
 		
 		Request request = new Request ("cardRequest", 5);
 		

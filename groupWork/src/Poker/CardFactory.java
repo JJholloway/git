@@ -42,12 +42,14 @@ public class CardFactory{
 		
 		for(int i=1; i<14; i++)
             value.get(new HeartsCard(i).getValue());
-		
+		for(int i=1; i<14; i++)
+            value.get(new ClubsCard(i).getValue());
+		for(int i=1; i<14; i++)
+            value.get(new SpadesCard(i).getValue());
+		for(int i=1; i<14; i++)
+            value.get(new DiamondsCard(i).getValue());
 		
 		return value;
 		
 	}
-	
-
-
 }

@@ -1,17 +1,14 @@
 package Poker;
 
-public class startGameHandler extends PlayHandler {
-	
-	
+public class ShowResultsHandler extends PlayHandler {
+
 	@Override
 	public boolean canHandle(Request request) {
-
-		String requestType = "startGame";
+	String requestType = "results";
 		
 		if(requestType.equals(request.getRequestType())){
 			
-			//Load cards 
-			//Shuffle cards 
+		//display results 
 			
 			return true;
 			
@@ -19,10 +16,5 @@ public class startGameHandler extends PlayHandler {
 			return false;
 		}
 	}
-
-	
-
-	
-
 
 }
