@@ -28,4 +28,12 @@ public abstract class iCard {
 		}
 		return numpart + " of " + suit;
 	}
+	
+	
+	// we need a section in the interface that will return the int value of the card so we use this for comparison 
+	public int getValue(){
+		
+		return number;
+		
+	}
 }

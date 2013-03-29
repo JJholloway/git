@@ -13,6 +13,7 @@ public class Deck {
 	//create a private reference to the one and only instance of the deal class
 	private static Deck uniqueDeal = null;
 	private List<iCard> packOfCards = null;
+	private List<iCard> cardValue = null;
 	
 	// at this stage of the design it can either be private or protected 
 	// i will set it to private but if it has to determine a subclass instance then it should be changed to protected
@@ -24,6 +25,7 @@ public class Deck {
 		if (uniqueDeal == null){
 				uniqueDeal = new Deck();
                 uniqueDeal.packOfCards = CardFactory.getDeck();
+               uniqueDeal.cardValue = CardFactory.cardValue();
 				// have to shuffle the list before it it is dealt 
 				Collections.shuffle(uniqueDeal.packOfCards);
 		}
@@ -32,13 +34,19 @@ public class Deck {
 		
 	}
 	
-	public List<iCard> getRequestedCards(int numOfCards){
+	public static List<iCard> getRequestedCards(int numOfCards){
 		List<iCard> cardsToSend = new ArrayList<iCard>();
 		
 		for(int i =0; i < numOfCards; i++){
 			cardsToSend.add(uniqueDeal.packOfCards.get(0));
+			uniqueDeal.cardValue.get(0);
             uniqueDeal.packOfCards.remove(0);
+            
+            
 		}
 		return cardsToSend;
 	}
+	
+	
+	
 }
