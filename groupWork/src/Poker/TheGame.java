@@ -7,25 +7,25 @@ public class TheGame
 { 
 	public static void main(String [] args)
 	{
-		//List<iCard> deck = Deck.getInstance().getRequestedCards(5);
 		
-		
-		//for(int i=0; i<deck.size(); i++){
-			
-			//System.out.println(deck.get(i));//.toString());
-		//	}
+		PlayHandler handle = new StartGameHandler();
 		
 		System.out.println("Are you Ready to play POKER!!!!"); 
-		System.out.println("How many cards do you want?"); 
+		System.out.println("If so - type 'Start'"); 
 		
 		Scanner scan = new Scanner(System.in);
 		
+		Request request = new Request(scan.next());
+		
+		boolean theOutput = handle.canHandle(request);
+		
+		
 		// need to get the belwo working for the Start game handler 
-		   List<iCard> dealer = Deck.getInstance().getRequestedCards(scan.nextShort());		
-			List<iCard> player =  Deck.getInstance().getRequestedCards(5);
+		// List<iCard> dealer = Deck.getInstance().getRequestedCards(scan.nextShort());		
+		//List<iCard> player =  Deck.getInstance().getRequestedCards(5);
 			
-			System.out.println("Dealers hand is " +dealer);
-			System.out.println("Players hand is " +player);
+		//System.out.println("Dealers hand is " +dealer);
+		//	System.out.println("Players hand is " +player);
 		
 		
 		

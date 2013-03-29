@@ -13,11 +13,11 @@ public class StartGameHandler extends PlayHandler {
 	@Override
 	public boolean canHandle(Request request) {
 
-		String requestType = "startGame";
+		String requestType = "Start";
 		
 		if(requestType.equals(request.getRequestType())){
 			
-			System.out.println("you have found the correct request type");
+			System.out.println("Lets start...!");
 			
 			// when the game starts both player1 and the dealer will get dealt 5 cards 
 			//List<iCard> deck = Deck.getInstance().getRequestedCards(10);
@@ -29,7 +29,7 @@ public class StartGameHandler extends PlayHandler {
 			List<iCard> player =  Deck.getInstance().getRequestedCards(5);
 			
 			//System.out.println("Dealers hand is " +dealer);
-			//System.out.println("Players hand is " +player);
+			System.out.println("Your hand is " +player);
 			
 			return true;
 			
