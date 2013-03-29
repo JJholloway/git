@@ -15,11 +15,11 @@ public class TestCardHandler {
 	public void test() {
 		PlayHandler classUnderTest = new CardRequestHandler();
 		
-		Request request = new Request ("cardRequest", 5);
+		Request request = new Request ("cardRequest");
 		
-		Boolean actualOutput = classUnderTest.canHandle(request);
+		boolean actualOutput = classUnderTest.canHandle(request);
 		
-		//assertTrue("Handler failed to grab", actualOutput);
+		//assertEquals("Handler failed to grab", actualOutput);
 		
 	}
 
