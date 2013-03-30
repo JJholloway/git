@@ -19,17 +19,6 @@ public class TheGame
 		Request request = new Request(scan.next());
 		
 		service.playerRequest(request);
-		
-		System.out.println(""); 
-		System.out.println("OOO what do think of your hand?!?!"); 
-		System.out.println("Type 'Analyse' to compare with the dealer"); 
-	    
-        Scanner scan1 = new Scanner(System.in);
-		
-		Request request1 = new Request(scan.next());
-		
-		service.playerRequest(request1);
-		
-		
+				
 	}
 }
