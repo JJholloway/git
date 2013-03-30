@@ -19,6 +19,14 @@ public class AnalyseHandHandler extends PlayHandler {
 			List<iCard> dealer = Deck.getInstance().getDealerCards();
 			List<iCard> player = Deck.getInstance().getPlayerCards();
 			
+		
+			
+			String dealer2 = dealer.toString();
+			
+			if(dealer2.contains("Hearts")){
+				System.out.println("true");
+			}
+			
 			ArrayList<String> dealer1 = new ArrayList<>();
 			ArrayList<String> player1 = new ArrayList<>();
 			
@@ -41,6 +49,10 @@ public class AnalyseHandHandler extends PlayHandler {
 			System.out.println(dealer1);
 			
 			System.out.println(player1);
+			
+			// i amgoing to do this the old school 'bruit force' for loop way but i am sure that there is a better way....
+			// also this will only work for: pair, two pair, three of a kind (could also work for straight)
+			// flush -- hmmm
 			
 			
 			// lets compare the values
