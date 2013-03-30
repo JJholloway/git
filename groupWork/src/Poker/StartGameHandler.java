@@ -20,7 +20,7 @@ public class StartGameHandler extends PlayHandler {
 			System.out.println("Lets start...!");
 			
 			System.out.println("Dealers hand is " +  Deck.getInstance().getDealerCards());
-			System.out.println("Dealers hand is " +  Deck.getInstance().getPlayerCards());
+			System.out.println("Your hand is " +  Deck.getInstance().getPlayerCards());
 			//System.out.println("Your hand is " +player);
 			
 			System.out.println(""); 
