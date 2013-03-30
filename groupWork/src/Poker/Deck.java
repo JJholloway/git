@@ -10,59 +10,54 @@ import java.util.List;
 //it main features will be 
 
 public class Deck {
-	//create a private reference to the one and only instance of the deal class
+	// create a private reference to the one and only instance of the deal class
 	private static Deck uniqueDeal = null;
 	private List<iCard> packOfCards = null;
-	
-	
-	
-	// at this stage of the design it can either be private or protected 
-	// i will set it to private but if it has to determine a subclass instance then it should be changed to protected
-	private Deck (){}
-	
-	
-	// Next - return one instance of the singleton if it does not yet exist
-	public static Deck getInstance(){
-		if (uniqueDeal == null){
-				uniqueDeal = new Deck();
-                uniqueDeal.packOfCards = CardFactory.getDeck();
-				// have to shuffle the list before it it is dealt 
-				Collections.shuffle(uniqueDeal.packOfCards);
-				
-				// we have to create a player and dealer hands in here 
-				
-				}
-		
-		return uniqueDeal;
-		
+
+	// at this stage of the design it can either be private or protected
+	// i will set it to private but if it has to determine a subclass instance
+	// then it should be changed to protected
+	private Deck() {
 	}
-	
-	private List<iCard> getRequestedCards(int numOfCards){
+
+	// Next - return one instance of the singleton if it does not yet exist
+	public static Deck getInstance() {
+		if (uniqueDeal == null) {
+			uniqueDeal = new Deck();
+			uniqueDeal.packOfCards = CardFactory.getDeck();
+			// have to shuffle the list before it it is dealt
+			Collections.shuffle(uniqueDeal.packOfCards);
+
+			// we have to create a player and dealer hands in here
+
+		}
+
+		return uniqueDeal;
+
+	}
+
+	private List<iCard> getRequestedCards(int numOfCards) {
 		List<iCard> cardsToSend = new ArrayList<iCard>();
-		
-		for(int i =0; i < numOfCards; i++){
+
+		for (int i = 0; i < numOfCards; i++) {
 			cardsToSend.add(uniqueDeal.packOfCards.get(0));
-            uniqueDeal.packOfCards.remove(0);
-            
+			uniqueDeal.packOfCards.remove(0);
+
 		}
 		return cardsToSend;
 	}
-	
 
-	private static  List<iCard> dealerCards = getInstance().getRequestedCards(5);
-	
-	private static  List<iCard> playerCards = getInstance().getRequestedCards(5);
-		
-						
-	//private  List<iCard> playerCards = getRequestedCards(5);
-	
-		
-	public static List<iCard> getDealerCards(){
+	private static List<iCard> dealerCards = getInstance().getRequestedCards(5);
+
+	private static List<iCard> playerCards = getInstance().getRequestedCards(5);
+
+	// private List<iCard> playerCards = getRequestedCards(5);
+
+	public static List<iCard> getDealerCards() {
 		return dealerCards;
 	}
-	
-	
-	public static List<iCard> getPlayerCards(){
-		return playerCards;	
-		}
+
+	public static List<iCard> getPlayerCards() {
+		return playerCards;
+	}
 }
