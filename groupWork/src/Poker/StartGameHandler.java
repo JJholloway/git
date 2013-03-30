@@ -19,17 +19,9 @@ public class StartGameHandler extends PlayHandler {
 			
 			System.out.println("Lets start...!");
 			
-			// when the game starts both player1 and the dealer will get dealt 5 cards 
-			//List<iCard> deck = Deck.getInstance().getRequestedCards(10);
-			
-			
-			//scan.nextShort();
-			
-		    List<iCard> dealer = Deck.getInstance().getRequestedCards(5);		
-			List<iCard> player =  Deck.getInstance().getRequestedCards(5);
-			
-			//System.out.println("Dealers hand is " +dealer);
-			System.out.println("Your hand is " +player);
+			System.out.println("Dealers hand is " +  Deck.getInstance().getDealerCards());
+			System.out.println("Dealers hand is " +  Deck.getInstance().getPlayerCards());
+			//System.out.println("Your hand is " +player);
 			
 			return true;
 			

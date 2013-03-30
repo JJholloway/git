@@ -17,10 +17,7 @@ public class Request {
 	public Request (String requestType){         //int requestedCards){
 		this.requestType = requestType;
 		//this.numOfCards = requestedCards;
-		
-			
-		
-	}
+		}
 
 
 	public String getRequestType() {
@@ -32,5 +29,7 @@ public class Request {
 		return numOfCards;
 		
 	}
+	
+	
 	
 }

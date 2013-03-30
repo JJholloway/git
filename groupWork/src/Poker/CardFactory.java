@@ -37,19 +37,4 @@ public class CardFactory{
 		return deck;
 	}
 	
-	public static List<iCard> cardValue(){
-		List<iCard> value = new ArrayList<iCard>();
-		
-		for(int i=1; i<14; i++)
-            value.get(new HeartsCard(i).getValue());
-		for(int i=1; i<14; i++)
-            value.get(new ClubsCard(i).getValue());
-		for(int i=1; i<14; i++)
-            value.get(new SpadesCard(i).getValue());
-		for(int i=1; i<14; i++)
-            value.get(new DiamondsCard(i).getValue());
-		
-		return value;
-		
 	}
-}
