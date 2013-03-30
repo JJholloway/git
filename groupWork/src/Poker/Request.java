@@ -7,8 +7,11 @@ public class Request {
 	// lets create some private variables:
 	
 	private String requestType; 
+	private static int playerResult; 
+	private static int dealerResult;
 	
-	private int numOfCards;
+	
+
 	
 	
 	// have the constructor take in the above variables
@@ -23,13 +26,28 @@ public class Request {
 	public String getRequestType() {
 		return requestType;
 	}
+
+
 	
-	// specify all of the getters and setters below
-	public int getRequestedCards() {
-		return numOfCards;
-		
+	
+	
+	public static int getPlayerResult() {
+		return playerResult;
 	}
-	
-	
+
+
+	public void setResult(int playerResult) {
+		this.playerResult = playerResult;
+	}
+
+
+	public static  int getDealerResult() {
+		return dealerResult;
+	}
+
+
+	public  void setDealerResult(int dealerResult) {
+		this.dealerResult = dealerResult;
+	}
 	
 }

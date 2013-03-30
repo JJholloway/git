@@ -2,6 +2,7 @@ package Poker;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class AnalyseHandHandler extends PlayHandler {
 
@@ -14,6 +15,8 @@ public class AnalyseHandHandler extends PlayHandler {
 			int dealerCount = 0;
 			String playerResult = "";
 			String dealerResult = "";
+			int intPlayerResult = 0;
+			int intDealerResult =0;
 			List<iCard> dealer = Deck.getInstance().getDealerCards();
 			List<iCard> player = Deck.getInstance().getPlayerCards();
 			ArrayList<String> dealer1 = new ArrayList<>();
@@ -67,12 +70,20 @@ public class AnalyseHandHandler extends PlayHandler {
 					if (a.equals(b)) {
 						playerResult = "player has a pair!";
 						playerCount++;
+						intPlayerResult =1;
 
 						if (playerCount > 1 && playerCount < 3) {
 							playerResult = ("player two pair!");
+							intPlayerResult =2;
 						}
 						if (playerCount > 2) {
 							playerResult = "player has three of a kind!";
+							intPlayerResult =3;
+
+						}
+						if (playerCount > 3) {
+							playerResult = "player has four of a kind!";
+							intPlayerResult =4;
 
 						}
 					}
@@ -88,12 +99,20 @@ public class AnalyseHandHandler extends PlayHandler {
 					if (c.equals(d)) {
 						dealerResult = "dealer has a pair!";
 						dealerCount++;
+						intDealerResult =1;
 
 						if (dealerCount > 1 && dealerCount < 3) {
 							dealerResult = ("dealer two pair!");
+							intDealerResult =2;
 						}
 						if (dealerCount > 2) {
 							dealerResult = "dealer has three of a kind!";
+							intDealerResult =3;
+
+						}
+						if (dealerCount > 3) {
+							dealerResult = "dealer has four of a kind!";
+							intDealerResult =4;
 
 						}
 					}
@@ -104,8 +123,26 @@ public class AnalyseHandHandler extends PlayHandler {
 
 			System.out.println(dealerResult);
 			System.out.println(playerResult);
+			
+			
+			
 			// lets compare the values
 			// starting off trying to find a pair
+			
+			
+			System.out.println(""); 
+			System.out.println("OOOOOOOO"); 
+			System.out.println("Type 'Result' to confirm your joyious sucess or fate!"); 
+			
+			PlayService service = new PlayService();
+			
+			Scanner scan1 = new Scanner(System.in);
+				
+			Request request1 = new Request(scan1.next());
+			request1.setResult(intPlayerResult);
+			request1.setDealerResult(intDealerResult);
+				
+			service.playerRequest(request1);
 
 			return true;
 
