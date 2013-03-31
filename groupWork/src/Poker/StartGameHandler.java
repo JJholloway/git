@@ -18,25 +18,16 @@ public class StartGameHandler extends PlayHandler {
 		if(requestType.equals(request.getRequestType())){
 			
 			System.out.println("Lets start...!");
-			
 			System.out.println("Dealers hand is " +  Deck.getInstance().getDealerCards());
 			System.out.println("Your hand is " +  Deck.getInstance().getPlayerCards());
-			//System.out.println("Your hand is " +player);
-			
-			System.out.println(""); 
-			System.out.println("OOO what do think of your hand?!?!"); 
-			System.out.println("Type 'Analyse' to compare with the dealer"); 
-			
-			PlayService service = new PlayService();
-			
-			Scanner scan1 = new Scanner(System.in);
-				
-			Request request1 = new Request(scan1.next());
-				
-			service.playerRequest(request1);
-				
+
+			//System.out.println("Type 'Analyse' to compare with the dealer");
+            //Scanner scan1 = new Scanner(System.in);
+            //Request request1 = new Request(scan1.next());
+
+            PlayService service = new PlayService();
+			service.playerRequest(new Request("Analyse"));
 			return true;
-			
 		}else{
 			return false;
 		}

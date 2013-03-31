@@ -11,7 +11,26 @@ public class AnalyseHandHandler extends PlayHandler {
 		String requestType = "Analyse";
 
 		if (requestType.equals(request.getRequestType())) {
-			int playerCount = 0;
+
+            int dealerScore = iCard.analyseHand(Deck.getDealerCards());
+            int playerScore = iCard.analyseHand(Deck.getPlayerCards());
+
+            System.out.println("which cards do you want to replace? (type comma separated index, such as 0,1,2)");
+
+            PlayService service = new PlayService();
+            Scanner scan1 = new Scanner(System.in);
+
+
+
+            Request request1 = new Request("Results");
+            request1.setResult(playerScore);
+            request1.setDealerResult(dealerScore);
+
+            service.playerRequest(request1);
+
+
+
+			/*int playerCount = 0;
 			int dealerCount = 0;
 			String playerResult = "";
 			String dealerResult = "";
@@ -142,7 +161,7 @@ public class AnalyseHandHandler extends PlayHandler {
 			request1.setResult(intPlayerResult);
 			request1.setDealerResult(intDealerResult);
 				
-			service.playerRequest(request1);
+			service.playerRequest(request1);*/
 
 			return true;
 
