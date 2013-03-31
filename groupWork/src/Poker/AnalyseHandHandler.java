@@ -12,22 +12,25 @@ public class AnalyseHandHandler extends PlayHandler {
 
 		if (requestType.equals(request.getRequestType())) {
 
+            Request request1 = new Request("Result");
+
             int dealerScore = iCard.analyseHand(Deck.getDealerCards());
-            int playerScore = iCard.analyseHand(Deck.getPlayerCards());
-
-            System.out.println("which cards do you want to replace? (type comma separated index, such as 0,1,2)");
-
-            PlayService service = new PlayService();
-            Scanner scan1 = new Scanner(System.in);
-
-
-
-            Request request1 = new Request("Results");
-            request1.setResult(playerScore);
             request1.setDealerResult(dealerScore);
 
-            service.playerRequest(request1);
+            int playerScore = iCard.analyseHand(Deck.getPlayerCards());
 
+            System.out.println("which cards do you want to replace(up to 3)? (type comma separated index, such as 0,1,2)");
+            PlayService service = new PlayService();
+            Scanner scan = new Scanner(System.in);
+            String[] entries = scan.next().split(",");
+            int count = (entries.length > 3 ? 3 : entries.length);
+            for(int i=0; i<count; i++)
+            {
+                Deck.getPlayerCards().remove(Integer.parseInt(entries[i]));
+                Deck.getPlayerCards().add(Deck.getInstance().getCard());
+            }
+            request1.setResult(playerScore);
+            service.playerRequest(request1);
 
 
 			/*int playerCount = 0;

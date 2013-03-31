@@ -42,13 +42,17 @@ public class Deck {
 	private List<iCard> getRequestedCards(int numOfCards) {
 		List<iCard> cardsToSend = new ArrayList<iCard>();
 
-		for (int i = 0; i < numOfCards; i++) {
-			cardsToSend.add(uniqueDeal.packOfCards.get(0));
-			uniqueDeal.packOfCards.remove(0);
+		for (int i = 0; i < numOfCards; i++)
+            cardsToSend.add(getCard());
 
-		}
 		return cardsToSend;
 	}
+
+    public iCard getCard(){
+        iCard theOne = uniqueDeal.packOfCards.get(0);
+        uniqueDeal.packOfCards.remove(0);
+        return theOne;
+    }
 
 	public static List<iCard> getDealerCards() {
 		return getInstance().dealerCards;

@@ -38,11 +38,9 @@ public abstract class iCard {
 	public int getValue(){
 		return number;
 	}
-    public String getSuit()
-    {
+    public String getSuit(){
         return suit;
     }
-
 
     static public int analyseHand(List<iCard> list)
     {
@@ -53,7 +51,6 @@ public abstract class iCard {
             numbers.put(list.get(i).getValue(), numbers.containsKey(list.get(i).getValue()) ? numbers.get(list.get(i).getValue()) + 1 : 1);
             suits.put(list.get(i).getSuit(), suits.containsKey(list.get(i).getSuit()) ? suits.get(list.get(i).getSuit()) + 1 : 1);
         }
-
 
         Iterator entries = numbers.entrySet().iterator();
         //four of a kind
