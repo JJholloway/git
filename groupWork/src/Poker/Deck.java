@@ -57,6 +57,9 @@ public class Deck {
 	public static List<iCard> getDealerCards() {
 		return getInstance().dealerCards;
 	}
+    public static void setDealerCards(List<iCard> newCards) {
+        getInstance().dealerCards = newCards;
+    }
 
 	public static List<iCard> getPlayerCards() {
 		return getInstance().playerCards;

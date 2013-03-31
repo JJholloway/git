@@ -13,8 +13,7 @@ public class TheGame
 		//System.out.println("If so - type 'Start'");
 		
 		
-		Scanner scan = new Scanner(System.in);
-		
+		//Scanner scan = new Scanner(System.in);
 		//Request request = new Request(scan.next());
         Request request = new Request("Start");
 		
