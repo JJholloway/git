@@ -18,7 +18,7 @@ public class StartGameHandler extends PlayHandler {
 		if(requestType.equals(request.getRequestType())){
 			
 			System.out.println("Lets start...!");
-			System.out.println("Dealers hand is " +  Deck.getInstance().getDealerCards());
+			//System.out.println("Dealers hand is " +  Deck.getInstance().getDealerCards());
 			System.out.println("Your hand is " +  Deck.getInstance().getPlayerCards());
 
             PlayService service = new PlayService();
