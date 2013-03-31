@@ -10,7 +10,7 @@ package Poker;
 import java.util.*;
 import java.util.Map.Entry;
 
-public abstract class iCard {
+public abstract class iCard implements Comparable<iCard> {
 	private int number;
 	private String suit;
 
@@ -40,5 +40,9 @@ public abstract class iCard {
 	}
     public String getSuit(){
         return suit;
+    }
+
+    public int compareTo(iCard that) {
+        return (this.number < that.number ? -1 : this.number > that.number ? 1 : 0);
     }
 }

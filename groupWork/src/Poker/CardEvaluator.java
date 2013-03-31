@@ -1,5 +1,6 @@
 package Poker;
 
+import javax.swing.*;
 import java.util.*;
 
 public class CardEvaluator {
@@ -44,7 +45,12 @@ public class CardEvaluator {
     }
     private boolean isSequence(List<iCard> list)
     {
-        return false;
+        List<iCard> sorted = list.subList(0, list.size());
+        Collections.sort(sorted);
+        for(int i=1; i<sorted.size(); i++)
+            if(sorted.get(i-1).getValue() + 1 != sorted.get(i).getValue())
+                return false;
+        return true;
     }
 
     public void replaceDealersCards()
@@ -67,5 +73,43 @@ public class CardEvaluator {
             }
             Deck.setDealerCards(newList);
         }
+    }
+
+    public String resultMessage(List<iCard> list)
+    {
+        analyse(list);
+        Iterator entries = numbers.entrySet().iterator();
+
+        if(((Integer) ((Map.Entry)entries.next()).getValue()) > 3 || ((Integer) ((Map.Entry)entries.next()).getValue()) > 3)
+            return "four of a kind";
+        //a flush
+        entries = suits.entrySet().iterator();
+        if(((Integer) ((Map.Entry)entries.next()).getValue()) == 5)
+            return "a flush";
+
+        if(isSequence(list))
+            return "a straight";
+
+        int pairs = 0;
+        int three = 0;
+        for(Map.Entry<Integer, Integer> entry : numbers.entrySet())
+        {
+            if(entry.getValue() == 3)
+                three = 1;
+            else if(entry.getValue() == 2)
+                pairs++;
+        }
+        if(three==1){
+            if(pairs == 0)
+                return "three of a kind";
+            else
+                return "three of a kind, and a pair";
+        }
+        else if(pairs==1)
+            return "one pair";
+        else if(pairs == 2)
+            return "two pairs";
+        else
+            return "nothing";
     }
 }

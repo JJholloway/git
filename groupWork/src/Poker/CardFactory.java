@@ -7,20 +7,6 @@ import java.util.ArrayList;
 
 public class CardFactory{
 
-	public static iCard getCard(int number, String suit)
-	{
-		if(suit == "Spades")
-            return new SpadesCard(number);
-        else if(suit == "Clubs")
-			return new ClubsCard(number);
-        else if(suit == "Hearts")
-			return new HeartsCard(number);
-        else if(suit == "Clubs")
-			return new DiamondsCard(number);
-
-        return null;
-	}
-
 	public static List<iCard> getDeck()
 	{	
 		List<iCard> deck = new ArrayList<iCard>();
@@ -36,5 +22,4 @@ public class CardFactory{
 		Collections.shuffle(deck);
 		return deck;
 	}
-	
-	}
+}
