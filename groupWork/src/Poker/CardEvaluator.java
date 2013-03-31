@@ -88,28 +88,26 @@ public class CardEvaluator {
             return "a flush";
 
         if(isSequence(list))
-            return "a straight";
+        {
+            List<iCard> sorted = list.subList(0, list.size());
+            Collections.sort(sorted);
+            return "a straight from " + sorted.get(0) + " to " + sorted.get(sorted.size()-1);
+        }
 
-        int pairs = 0;
-        int three = 0;
+        String result = "";
         for(Map.Entry<Integer, Integer> entry : numbers.entrySet())
         {
             if(entry.getValue() == 3)
-                three = 1;
+                result += "three of a kind (" + entry.getKey() + "s)";
             else if(entry.getValue() == 2)
-                pairs++;
+            {
+                if(result != "")
+                    result += " and ";
+                result += "a pair of " + entry.getKey() + "s";
+            }
         }
-        if(three==1){
-            if(pairs == 0)
-                return "three of a kind";
-            else
-                return "three of a kind, and a pair";
-        }
-        else if(pairs==1)
-            return "one pair";
-        else if(pairs == 2)
-            return "two pairs";
-        else
-            return "nothing";
+        if(result == "")
+            result = "nothing";
+        return result;
     }
 }

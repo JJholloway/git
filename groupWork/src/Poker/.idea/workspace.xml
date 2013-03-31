@@ -6,14 +6,14 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Deck.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364748364063" ignored="false" />
     <file path="/TheGame.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364481777668" ignored="false" />
-    <file path="/fragment.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364755014263" ignored="false" />
+    <file path="/fragment.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364762778854" ignored="false" />
     <file path="/Dummy.txt" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364479856945" ignored="false" />
     <file path="/SBT" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364734875965" ignored="false" />
     <file path="/iCard.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364754361767" ignored="false" />
     <file path="/AnalyseHandHandler.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364748413030" ignored="false" />
-    <file path="/CardEvaluator.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364754924568" ignored="false" />
+    <file path="/CardEvaluator.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364763342848" ignored="false" />
     <file path="/ShowResultsHandler.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364751681595" ignored="false" />
-    <file path="/CardRequestHandler.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364753082951" ignored="false" />
+    <file path="/CardRequestHandler.java" changelist="80d9dd99-fcd4-41d9-a62a-43b401d4d48b" time="1364761188205" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,22 +63,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/CardRequestHandler.java" line="16" class="Poker.CardRequestHandler" package="Poker">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -91,30 +75,8 @@
       <file leaf-file-name="AnalyseHandHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnalyseHandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardRequestHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CardRequestHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="66" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#660#667#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CardFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="197" selection-end="306" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#229#236#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -122,22 +84,21 @@
       <file leaf-file-name="CardEvaluator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CardEvaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.2006689">
+            <state line="105" column="55" selection-start="3598" selection-end="3598" vertical-scroll-proportion="1.1703577">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#replaceDealersCards#0;class#CardEvaluator#0" expanded="false" />
                 <element signature="e#1999#2006#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="iCard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iCard.java">
+      <file leaf-file-name="CardRequestHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CardRequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="34" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0">
+            <state line="27" column="27" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#810#817#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,14 +115,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Request.java" />
-        <option value="$PROJECT_DIR$/StartGameHandler.java" />
         <option value="$PROJECT_DIR$/Deck.java" />
-        <option value="$PROJECT_DIR$/TheGame.java" />
         <option value="$PROJECT_DIR$/CardFactory.java" />
         <option value="$PROJECT_DIR$/ShowResultsHandler.java" />
         <option value="$PROJECT_DIR$/AnalyseHandHandler.java" />
-        <option value="$PROJECT_DIR$/CardRequestHandler.java" />
         <option value="$PROJECT_DIR$/iCard.java" />
+        <option value="$PROJECT_DIR$/StartGameHandler.java" />
+        <option value="$PROJECT_DIR$/TheGame.java" />
+        <option value="$PROJECT_DIR$/CardRequestHandler.java" />
         <option value="$PROJECT_DIR$/CardEvaluator.java" />
       </list>
     </option>
@@ -170,9 +131,9 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="657" />
+    <option name="x" value="781" />
     <option name="y" value="22" />
-    <option name="width" value="1262" />
+    <option name="width" value="1138" />
     <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -424,8 +385,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="657" y="22" width="1262" height="1058" extended-state="6" />
-    <editor active="true" />
+    <frame x="781" y="22" width="1138" height="1058" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -433,7 +394,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49253732" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3304904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -445,7 +406,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19407895" sideWeight="0.5074627" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1978022" sideWeight="0.6695096" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -514,41 +475,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="286" selection-end="297" vertical-scroll-proportion="0.15079366">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpadesCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.045045044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlayHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="52" selection-start="771" selection-end="771" vertical-scroll-proportion="1.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TheGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="48" selection-start="357" selection-end="357" vertical-scroll-proportion="0.41379312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartGameHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="0.67241377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1963" column="0" selection-start="76674" selection-end="76674" vertical-scroll-proportion="0.31896552">
@@ -556,55 +482,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="92" selection-start="329" selection-end="329" vertical-scroll-proportion="0.3448276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DiamondsCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Deck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.85164833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ShowResultsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="478" selection-end="549" vertical-scroll-proportion="0.26373628">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="34" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CardRequestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="66" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#660#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnalyseHandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -618,12 +498,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CardEvaluator.java">
+    <entry file="file://$PROJECT_DIR$/SpadesCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.2006689">
+        <state line="2" column="13" selection-start="29" selection-end="29" vertical-scroll-proportion="0.03382187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="30" selection-start="286" selection-end="297" vertical-scroll-proportion="0.117056854">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="34" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.6688963">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#replaceDealersCards#0;class#CardEvaluator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.36395147">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Deck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.7660312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.30664396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartGameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ShowResultsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="72" selection-start="438" selection-end="438" vertical-scroll-proportion="0.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CardRequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="27" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#810#817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalyseHandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CardEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="55" selection-start="3598" selection-end="3598" vertical-scroll-proportion="1.1703577">
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#1999#2006#0" expanded="true" />
           </folding>
         </state>

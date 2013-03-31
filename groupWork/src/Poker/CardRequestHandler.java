@@ -9,23 +9,26 @@ public class CardRequestHandler extends PlayHandler {
         String requestType = "cardRequest";
 
         if(requestType.equals(request.getRequestType())){
-
-            System.out.println("which cards do you want to replace, up to 3 cards? (type comma separated index, such as 0,1,2)");
+            Request request1 = new Request("Result");
+            System.out.println("which cards do you want to replace, up to 3 cards? (type comma separated index, such as '0,1,2' or 'none' if you dont want any card)");
             PlayService service = new PlayService();
             Scanner scan = new Scanner(System.in);
             String[] entries = scan.next().split(",");
-            int count = (entries.length > 3 ? 3 : entries.length);
-            List<iCard> remove = new ArrayList<iCard>();
-            for(int i=0; i<count; i++)
+            if(entries[0] != "none")
             {
-                remove.add(Deck.getPlayerCards().get(Integer.parseInt(entries[i])));
+                int count = (entries.length > 3 ? 3 : entries.length);
+                List<iCard> remove = new ArrayList<iCard>();
+                for(int i=0; i<count; i++)
+                {
+                    remove.add(Deck.getPlayerCards().get(Integer.parseInt(entries[i])));
+                }
+                for(int i=0; i<count; i++)
+                {
+                    Deck.getPlayerCards().remove(remove.get(i));
+                    Deck.getPlayerCards().add(Deck.getInstance().getCard());
+                }
             }
-            for(int i=0; i<count; i++)
-            {
-                Deck.getPlayerCards().remove(remove.get(i));
-                Deck.getPlayerCards().add(Deck.getInstance().getCard());
-            }
-            Request request1 = new Request("Result");
+            System.out.println("Your hand is " +  Deck.getInstance().getPlayerCards());
             CardEvaluator eval = new CardEvaluator();
             int playerScore = eval.analyse(Deck.getPlayerCards());
             request1.setResult(playerScore);

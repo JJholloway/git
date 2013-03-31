@@ -21,10 +21,6 @@ public class StartGameHandler extends PlayHandler {
 			System.out.println("Dealers hand is " +  Deck.getInstance().getDealerCards());
 			System.out.println("Your hand is " +  Deck.getInstance().getPlayerCards());
 
-			//System.out.println("Type 'Analyse' to compare with the dealer");
-            //Scanner scan1 = new Scanner(System.in);
-            //Request request1 = new Request(scan1.next());
-
             PlayService service = new PlayService();
 			service.playerRequest(new Request("Analyse"));
 			return true;
