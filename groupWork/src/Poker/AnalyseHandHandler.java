@@ -19,9 +19,9 @@ public class AnalyseHandHandler extends PlayHandler {
 			int intDealerResult =0;
 			List<iCard> dealer = Deck.getInstance().getDealerCards();
 			List<iCard> player = Deck.getInstance().getPlayerCards();
-			ArrayList<String> dealer1 = new ArrayList<>();
-			ArrayList<String> player1 = new ArrayList<>();
-			ArrayList<String> ans = new ArrayList<>();
+			ArrayList<String> dealer1 = new ArrayList<String>();
+			ArrayList<String> player1 = new ArrayList<String>();
+			ArrayList<String> ans = new ArrayList<String>();
 
 			// compare both players hands
 			System.out.println("lets compare these hands");
