@@ -14,7 +14,7 @@ public class CardRequestHandler extends PlayHandler {
             PlayService service = new PlayService();
             Scanner scan = new Scanner(System.in);
             String[] entries = scan.next().split(",");
-            if(entries[0] != "none")
+            if(!entries[0].equals("none"))
             {
                 int count = (entries.length > 3 ? 3 : entries.length);
                 List<iCard> remove = new ArrayList<iCard>();
