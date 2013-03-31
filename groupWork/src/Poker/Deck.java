@@ -31,8 +31,8 @@ public class Deck {
 			// have to shuffle the list before it it is dealt
 			Collections.shuffle(uniqueDeal.packOfCards);
 
-            uniqueDeal.playerCards = getInstance().getRequestedCards(5);
-            uniqueDeal.dealerCards = getInstance().getRequestedCards(5);
+            uniqueDeal.playerCards = uniqueDeal.getRequestedCards(5);
+            uniqueDeal.dealerCards = uniqueDeal.getRequestedCards(5);
 		}
 
 		return uniqueDeal;
