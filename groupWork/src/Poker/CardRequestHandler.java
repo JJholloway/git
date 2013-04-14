@@ -8,7 +8,7 @@ public class CardRequestHandler extends PlayHandler {
 		
 		if(requestType.equals(request.getRequestType())){
 			
-			System.out.println("You have requested " + request.getRequestedCards() + " cards");
+			//System.out.println("You have requested " + request.getRequestedCards() + " cards");
 			
 			return true;
 			

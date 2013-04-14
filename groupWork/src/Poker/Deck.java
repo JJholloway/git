@@ -13,6 +13,7 @@ public class Deck {
 	//create a private reference to the one and only instance of the deal class
 	private static Deck uniqueDeal = null;
 	private List<iCard> packOfCards = null;
+	private List<iCard> dealerCards = null;
 	//private ArrayList<int> cardValue = new ;
 	
 	// at this stage of the design it can either be private or protected 
@@ -46,6 +47,21 @@ public class Deck {
 		}
 		return cardsToSend;
 	}
+	
+	
+	
+	
+	public List<iCard> getDealerCards() {
+		 List<iCard> dealer = Deck.getInstance().getRequestedCards(5);
+		 	
+		 return dealer;
+		}
+		
+	public List<iCard> getPlayerCards() {
+		 List<iCard> dealer = Deck.getInstance().getRequestedCards(5);
+			return dealer;
+		}
+	
 	
 	
 	

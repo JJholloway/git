@@ -25,10 +25,12 @@ public class StartGameHandler extends PlayHandler {
 			
 			//scan.nextShort();
 			
-		    List<iCard> dealer = Deck.getInstance().getRequestedCards(5);		
-			List<iCard> player =  Deck.getInstance().getRequestedCards(5);
+		    		
+			List<iCard> dealer =  Deck.getInstance().getDealerCards();
+			List<iCard> player =  Deck.getInstance().getPlayerCards();
 			
-			//System.out.println("Dealers hand is " +dealer);
+			
+			System.out.println("Dealers hand is " +dealer);
 			System.out.println("Your hand is " +player);
 			
 			return true;

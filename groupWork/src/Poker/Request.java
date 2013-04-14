@@ -1,5 +1,7 @@
 package Poker;
 
+import java.util.List;
+
 //This class will have all of the information from each GUI request – each different request should be assign a request type; this was it will make it easier for the handlers in the chain 
 
 public class Request {
@@ -17,9 +19,6 @@ public class Request {
 	public Request (String requestType){         //int requestedCards){
 		this.requestType = requestType;
 		//this.numOfCards = requestedCards;
-		
-			
-		
 	}
 
 
@@ -28,9 +27,7 @@ public class Request {
 	}
 	
 	// specify all of the getters and setters below
-	public int getRequestedCards() {
-		return numOfCards;
-		
-	}
+	
+	
 	
 }
