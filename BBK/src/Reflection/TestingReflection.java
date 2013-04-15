@@ -167,7 +167,7 @@ public class TestingReflection {
 
 			privateStringName.setAccessible(true);
 
-			// Lets go in and get some private feild data
+			// Lets go in and get some private field data
 
 			try {
 				String valueOfName = (String) privateStringName.get(UFOENemyShipPrivate);
@@ -176,27 +176,41 @@ public class TestingReflection {
 				
 				
 				// now lets get some private method data 
-				
+				//getPrivate is a method name 
 				String methodName = "getPrivate";
 				
 				try {
 					Method privateMethod = UFOEnemyShip.class.getDeclaredMethod(methodName, null);
 					
-					// lets make the private ethod accessable
+					// lets make the private method accessable
 					
 					privateMethod.setAccessible(true);
 					
-					// lets get the retur value of the private method 
+					
+					// lets get the return value of the private method 
 					
 					try {
-						String priavteReturnVal = (String)privateMethod.invoke(UFOENemyShipPrivate, null);
+						String privateReturnVal = (String)privateMethod.invoke(UFOENemyShipPrivate, null);
 						
-						System.out.println("EnemyShip Private Methods: "  + priavteReturnVal);
+						System.out.println("EnemyShip Private Methods: "  + privateReturnVal);
 						
-						
+						// Execute a method that has parameters 
+						// Define the parameters expected by the private method 
+							//and how would i find an old methods parametes -- try to answer this!!!
+						  // Class parameters = 
 						Class[] methodParameters = new Class[]{Integer.TYPE, String.class};
 						
+						
+						// Provide the parameters above with values 
 						Object[] params = new Object[]{new Integer(10), new String("Random")};
+						
+						// Get the method by providing its name and a Class array with parameters 
+						String methodName2 = "gotAnotherPrivate";
+						
+						Method privateMethod2 = UFOEnemyShip.class.getDeclaredMethod(methodName2, methodParameters);
+						
+						System.out.println("EnemyShip other private method:  "  + privateReturnVal);
+						
 						
 						
 						
